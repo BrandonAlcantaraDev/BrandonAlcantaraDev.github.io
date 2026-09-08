@@ -368,6 +368,7 @@ header{
   border-top:1px solid var(--line);
 }
 
+
 /* =========================================================
    ORGANIZERS HEADER
    ========================================================= */
@@ -518,7 +519,34 @@ header{
 }
 
 
+/* =========================================================
+   AXOLOTL DIVIDER
+   ========================================================= */
 
+.axolotl-divider{
+  position:relative;
+
+  height:0;
+
+  z-index:10;
+
+  display:flex;
+
+  justify-content:center;
+}
+
+.axolotl-divider img{
+  position:absolute;
+
+  width:200px;
+  height:200px;
+
+  object-fit:contain;
+
+  transform:translateY(-130px);
+
+  pointer-events:none;
+}
 
 /* =========================================================
    REGISTER SECTION
@@ -594,6 +622,16 @@ header{
     grid-template-columns:repeat(2,1fr);
 
     gap:45px 25px;
+  }
+
+
+  /* AXOLOTL */
+
+  .axolotl-divider img{
+    width:180px;
+    height:180px;
+
+    transform:translateY(-60px);
   }
 
 }
@@ -688,6 +726,16 @@ header{
     padding:70px 0;
   }
 
+
+  /* AXOLOTL */
+
+  .axolotl-divider img{
+    width:140px;
+    height:140px;
+
+    transform:translateY(-45px);
+  }
+
 }
 
 
@@ -728,6 +776,16 @@ header{
 
   .event-description{
     font-size:.9rem;
+  }
+
+
+  /* AXOLOTL */
+
+  .axolotl-divider img{
+    width:115px;
+    height:115px;
+
+    transform:translateY(-38px);
   }
 
 }
